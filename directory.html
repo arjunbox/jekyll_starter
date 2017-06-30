@@ -1,0 +1,46 @@
+---
+layout: page
+title: Directory
+permalink: /directory/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Employee Directory</h1>
+          <p>Find who you are looking for</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+    <h3>Employee Directory</h3>
+    <hr>
+    <table class="table table-striped dataTable">
+      <thead>
+        <tr>
+          <td>full_name</td>
+          <td>department</td>
+          <td>phone</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in site.data.AdsUsersForDrupal %}
+        <tr>
+          <td>{{user.full_name}}</td>
+          <td>{{ user.department | strip_html | truncatewords: 50 }}</td>
+          <td>{{user.phone}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <blockquote>
+      <p>Contact us today!</p>      
+    </blockquote>
+  </div>
+</div>

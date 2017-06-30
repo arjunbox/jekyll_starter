@@ -1,0 +1,28 @@
+{
+  "top": [{
+      "text": "Home",
+      "path": "/"
+    },
+    {
+      "text": "Directory",
+      "path": "/directory"
+    },
+    {
+      "text": "Blog",
+      "path": "/blog"
+    },
+    {
+      "text": "Contact",
+      "path": "/contact"
+    }
+  ],
+  "left": [{
+      "text": "Home",
+      "path": "/"
+    },
+    {
+      "text": "Directory",
+      "path": "/directory"
+    }
+  ]
+}
