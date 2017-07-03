@@ -2,20 +2,13 @@
 layout: page
 title: Blog
 permalink: /news/
+headerTitle: Get the latest on what we're doing
+headerSubCopy: Catch up with us, anytime and anywhere
 ---
-<!-- Slider Start -->
-<section id="global-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>Get the latest on what we're doing</h1>
-          <p>Catch up with us, anytime and anywhere</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+{% include global-header.html %}
+
+
 <div class="container">
   {% for post in site.posts %}
   <div class="post-area">
