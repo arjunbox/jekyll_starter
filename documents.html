@@ -53,7 +53,8 @@ headerSubCopy: All the forms you need to get started.
               <div role="tabpanel" class="tab-pane" id="forms">
                 <ul>
                   {% for doc in site.static_files %}
-                      {% if doc.path contains 'docs/' and doc.basename contains 'Form' %}
+                    {% assign lowercase_name = doc.basename | downcase %}
+                      {% if doc.path contains 'docs/' and lowercase_name contains 'form' %}
                         <li class="">
                           <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
                       </li>
@@ -64,7 +65,8 @@ headerSubCopy: All the forms you need to get started.
               <div role="tabpanel" class="tab-pane" id="encore">
                 <ul>
                   {% for doc in site.static_files %}
-                      {% if doc.path contains 'docs/' and doc.basename contains 'Encore' %}
+                    {% assign lowercase_name = doc.basename | downcase %}
+                      {% if doc.path contains 'docs/' and lowercase_name contains 'encore' %}
                         <li class="">
                           <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
                       </li>
