@@ -27,6 +27,7 @@ permalink: /directory/
           <td>full_name</td>
           <td>department</td>
           <td>phone</td>
+          <td>fax</td>
         </tr>
       </thead>
       <tbody>
@@ -35,12 +36,13 @@ permalink: /directory/
           <td>{{user.full_name}}</td>
           <td>{{ user.department | strip_html | truncatewords: 50 }}</td>
           <td>{{user.phone}}</td>
+          <td>{{user.fax}}</td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
     <blockquote>
-      <p>Contact us today!</p>      
+      <p>Contact us today!</p>
     </blockquote>
   </div>
 </div>

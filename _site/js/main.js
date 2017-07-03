@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+  if($('#rand-city').length){
+    // get random city from json data
+    $.get( "data/cities.json", function( data ) {
+      cities = data.Cities
+      var city = cities[Math.floor(Math.random() * cities.length)];
+      $('#rand-city').text(city.data);
+    });
+  }
+
 
 	$("#testimonial-slider").owlCarousel({
 	    paginationSpeed : 500,

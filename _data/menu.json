@@ -8,8 +8,12 @@
       "path": "/directory"
     },
     {
-      "text": "Blog",
-      "path": "/blog"
+      "text": "Gallery",
+      "path": "/gallery"
+    },
+    {
+      "text": "News",
+      "path": "/news"
     },
     {
       "text": "Contact",
