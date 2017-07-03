@@ -1,0 +1,31 @@
+- title: Catering
+  body: Lorem ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt ut
+  icon: ion-coffee
+
+- title: Conference Services
+  body: Lorem ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt ut
+  icon: ion-speakerphone
+
+- title: Room Setup
+  body: Lorem ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt ut
+  icon: ion-person
+
+- title: Audio/Visuals
+  body: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  icon: ion-volume-medium
+
+- title: Printing
+  body: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  icon: ion-printer
+
+- title: WiFi
+  body: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  icon: ion-radio-waves
+
+- title: Floor Planning
+  body: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  icon: ion-compass
+
+- title: Parking
+  body: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  icon: ion-model-s
