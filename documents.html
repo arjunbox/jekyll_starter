@@ -9,59 +9,81 @@ headerSubCopy: All the forms you need to get started.
 {% include global-header.html %}
 
 <!-- Portfolio Start -->
-<section id="portfolio-work">
+<section id="documents">
     <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-1">
-            <h1>Exhibitor Docs</h1>
-            <ul>
-              {% for doc in site.static_files %}
-                  {% if doc.path contains 'docs/exhibitor' %}
-                    <li class="">
-                      <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
-                  </li>
-                  {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          <div class="col-md-5">
-            <h1>General Docs</h1>
-            <ul>
-              {% for doc in site.static_files %}
-                  {% if doc.path contains 'docs/general' %}
-                    <li class="">
-                      <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
-                  </li>
-                  {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
+      <div class="row">
+        <div class="col-md-12">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Exhibitor</a></li>
+            <li role="presentation"><a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a></li>
+            <li role="presentation"><a href="#forms" aria-controls="forms" role="tab" data-toggle="tab">Forms</a></li>
+            <li role="presentation"><a href="#encore" aria-controls="encore" role="tab" data-toggle="tab">Encore</a></li>
+            <li role="presentation"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
+          </ul>
+
         </div>
-        <hr>
+      </div>
         <div class="row">
-          <div class="col-md-5 col-md-offset-1">
-            <h1>Forms</h1>
-            <ul>
-              {% for doc in site.static_files %}
-                  {% if doc.basename contains 'Form' %}
-                    <li class="">
-                      <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
-                  </li>
-                  {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          <div class="col-md-5">
-            <h1>Encore</h1>
-            <ul>
-              {% for doc in site.static_files %}
-                  {% if doc.basename contains 'Encore' %}
-                    <li class="">
-                      <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
-                  </li>
-                  {% endif %}
-              {% endfor %}
-            </ul>
+          <div class="col-md-6 col-md-offset-3">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="home">
+                <ul>
+                  {% for doc in site.static_files %}
+                      {% if doc.path contains 'docs/exhibitor' %}
+                        <li class="">
+                          <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
+                      </li>
+                      {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="general">
+                <ul>
+                  {% for doc in site.static_files %}
+                      {% if doc.path contains 'docs/general' %}
+                        <li class="">
+                          <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
+                      </li>
+                      {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="forms">
+                <ul>
+                  {% for doc in site.static_files %}
+                      {% if doc.path contains 'docs/' and doc.basename contains 'Form' %}
+                        <li class="">
+                          <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
+                      </li>
+                      {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="encore">
+                <ul>
+                  {% for doc in site.static_files %}
+                      {% if doc.path contains 'docs/' and doc.basename contains 'Encore' %}
+                        <li class="">
+                          <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
+                      </li>
+                      {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="all">
+                <ul>
+                  {% for doc in site.static_files %}
+                      {% if doc.path contains 'docs/' %}
+                        <li class="">
+                          <a href="{{ site.baseurl }}{{ doc.path }}">{{doc.name}}</a>
+                      </li>
+                      {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
     </div>
