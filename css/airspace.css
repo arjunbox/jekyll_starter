@@ -90,6 +90,12 @@ header .navbar-default .navbar-nav li a {
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
+
+#rand-city {
+  color: #004585;
+  text-decoration: none;
+  border-bottom: 2px solid #004585;
+}
 /*---------------------------------------------
 					Index Start
 -----------------------------------------------*/

@@ -17,6 +17,8 @@ permalink: /directory/
     </div>
   </div>
 </section>
+
+
 <div class="container">
   <div class="row">
     <h3>Employee Directory</h3>
@@ -24,25 +26,26 @@ permalink: /directory/
     <table class="table table-striped dataTable">
       <thead>
         <tr>
-          <td>full_name</td>
-          <td>department</td>
-          <td>phone</td>
-          <td>fax</td>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Email</td>
+          <td>Gender</td>
+          <td>Department</td>
         </tr>
       </thead>
       <tbody>
-        {% for user in site.data.AdsUsersForDrupal %}
+        {% for user in site.data.directory %}
         <tr>
-          <td>{{user.full_name}}</td>
-          <td>{{ user.department | strip_html | truncatewords: 50 }}</td>
-          <td>{{user.phone}}</td>
-          <td>{{user.fax}}</td>
+          <td>{{user.first_name}}</td>
+          <td>{{user.last_name}}</td>
+          <td><a href="MailTo:{{ user.email }}">{{ user.email }}</a></td>
+          <td>{{user.gender}}</td>
+          <td>{{user.department | strip_html | truncatewords: 50 }}</td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
-    <blockquote>
-      <p>Contact us today!</p>
-    </blockquote>
   </div>
 </div>
+
+{% include call-to-action.html %}

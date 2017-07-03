@@ -11,7 +11,7 @@ permalink: /gallery/
             <div class="col-md-12">
                 <div class="block">
                     <h1>Photo Gallery</h1>
-                    <p>Don’t just take our word for it. Check out some of our latest work.</p>
+                    <p>Automatically generated from images in a folder.</p>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@ permalink: /gallery/
                   {% for image in site.static_files %}
                       {% if image.path contains 'img/portfolio' %}
                         <li class="mix Branding">
-                          <a href="#">
+                          <a href="{{ site.baseurl }}{{ image.path }}">
                             <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                             <div class="overly">
                               <div class="position-center">
