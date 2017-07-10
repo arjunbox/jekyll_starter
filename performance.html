@@ -1,0 +1,127 @@
+---
+layout: page
+title: Performance
+permalink: /performance/
+headerTitle: Performance
+headerSubCopy: Some speed test on common sites
+---
+
+{% include global-header.html %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+
+<style>
+canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+</style>
+
+<!-- Portfolio Start -->
+<section id="portfolio-work">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Performance Tests</h1>
+            <p>ab(s) -n 1000 -c 120 </p>
+
+             <canvas id="canvas"></canvas>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+var barChartData = {
+            labels: ["TBDUG.com", "TampGov.net", "apps.tampagov.net", "FontAwesome.io", "NicholasStees.com", "github.io", "Amazon.com"],
+            datasets: [{
+                label: 'Dataset 1',
+                backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)'
+            ],
+                // borderColor: window.chartColors.blue,
+                borderWidth: 1,
+                data: [
+                    20.59,
+                    16.07,
+                    29.60,
+                    28.28,
+                    27.38,
+                    38.12,
+                    24.36
+
+                ]
+            },{
+                label: 'Dataset 2',
+                backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)'
+            ],
+                // borderColor: window.chartColors.blue,
+                borderWidth: 1,
+                data: [
+                    19.57,
+                    19.75,
+                    29.94,
+                    25.77,
+                    24.67,
+                    37.02,
+                    25.91
+
+                ]
+            },{
+                label: 'Dataset 3',
+                backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)'
+            ],
+                // borderColor: window.chartColors.blue,
+                borderWidth: 1,
+                data: [
+                    16.55,
+                    21.92,
+                    28.79,
+                    27.85,
+                    23.38,
+                    36.52,
+                    34.84
+
+                ]
+            }]
+
+        };
+
+window.onload = function() {
+    var ctx = document.getElementById("canvas").getContext("2d");
+    window.myBar = new Chart(ctx, {
+        type: 'bar',
+        data: barChartData,
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Chart.js Bar Chart'
+            }
+        }
+    });
+
+};
+</script>
