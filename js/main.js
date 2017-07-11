@@ -1,11 +1,25 @@
 $(document).ready(function(){
 
+  // get random city
   if($('#rand-city').length){
-    // get random city from json data
     $.get( "data/cities.json", function( data ) {
       cities = data.Cities
       var city = cities[Math.floor(Math.random() * cities.length)];
       $('#rand-city').text(city.data);
+    });
+  }
+
+
+// Get Next Rocket Launch
+  if($('#next-launch').length){
+    // get latest rocket launch data from API
+    $.get( "https://launchlibrary.net/1.2/launch/next/1", function( data ) {
+      launch = data.launches[0];
+      html = '<h1><i class="fa fa-rocket" aria-hidden="true"></i> '+launch.name+'</h1>';
+      html += '<strong>'+launch.windowstart+' - '+launch.windowend+'</strong>';
+      html += '<small class="pull-right">'+ launch.location.pads[0].agencies[0].name+'</small>';
+      html += '<hr><p>'+launch.missions[0].description+'</p>';
+       $('#next-launch').html(html);
     });
   }
 

@@ -10,6 +10,9 @@ headerSubCopy: Catch up with us, anytime and anywhere
 
 
 <div class="container">
+  <div class="well">
+    {% include next-launch.html %}
+  </div>
   {% for post in site.posts %}
   <div class="post-area">
     <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
