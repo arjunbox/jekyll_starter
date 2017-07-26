@@ -17,15 +17,15 @@ headerSubCopy: Automatically generated from images in a folder.
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
                   {% for image in site.static_files %}
-                      {% if image.path contains 'img/portfolio' %}
+                      {% if image.path contains 'img/city' %}
                         <li class="mix Branding">
                           <a href="{{ site.baseurl }}{{ image.path }}">
                             <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                            <!-- <div class="overly">
+                            <div class="overly">
                               <div class="position-center">
                                 <h2>Click To View</h2>
                               </div>
-                            </div> -->
+                            </div>
                           </a>
                       </li>
                       {% endif %}
