@@ -66,32 +66,31 @@ headerImage: city/7360147154_9832acfc5e_h.jpg
           </form>
         </div>
 
-        <div class="block">
-          <h2>Stop By For A visit</h2>
-          <ul class="address-block">
-            <li>
-              <i class="fa fa-map-marker"></i>{{site.data.business.address_full}}
-            </li>
-            <li>
-              <i class="fa fa-envelope-o"></i>Email: {{site.data.business.email_primary}}
-            </li>
-            <li>
-              <i class="fa fa-phone"></i>Phone: {{site.data.business.phone_primay}}
-            </li>
-          </ul>
-
-          <ul class="social-icons">
-            {% for item in site.data.social_media %}
-              <li>
-                <a href="{{item.link}}" title="{{item.name}}"><i class="fa {{item.icon}}"></i></a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <h2>We Also Count In Google Map</h2>
+          <div class="block">
+            <h2>Stop By For A visit</h2>
+            <ul class="address-block">
+              <li>
+                <i class="fa fa-map-marker"></i>{{site.data.business.address_full}}
+              </li>
+              <li>
+                <i class="fa fa-envelope-o"></i>Email: {{site.data.business.email_primary}}
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>Phone: {{site.data.business.phone_primay}}
+              </li>
+            </ul>
+
+            <ul class="social-icons">
+              {% for item in site.data.social_media %}
+              <li>
+                <a href="{{item.link}}" title="{{item.name}}"><i class="fa {{item.icon}}"></i></a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
             <div class="google-map">
               <iframe src="https://www.google.com/maps/embed/v1/place?key={{site.data.business.google_maps_api_key}}&q={{ site.data.business.address_full | url_encode }}" width="555" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
