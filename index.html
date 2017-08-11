@@ -2,6 +2,8 @@
 layout: page
 title: Home
 permalink: /
+custom_head_owl: true
+custom_head_counterup: true
 ---
 
 <!-- Slider Start -->
@@ -58,7 +60,7 @@ permalink: /
   <div class="container">
     <div class="row">
       <div class="section-title text-center">
-        <h2>EVERYTHING YOU NEED</h2>
+        <h2>TAMPA HAS EVERYTHING YOU WANT</h2>
         <p>The {{site.data.business.name}} is not only right on the water, it's minutes away from some of Florida's best attractions.</p>
       </div>
     </div>
@@ -68,28 +70,28 @@ permalink: /
           <ul class="counter-box clearfix">
             <li>
               <div class="block">
-                <i class="ion-home"></i>
+                <i class="fa fa-home"></i>
                 <h4 class="counter">85</h4>
                 <span>Hotels</span>
               </div>
             </li>
             <li>
               <div class="block">
-                <i class="ion-beer"></i>
+                <i class="fa fa-beer"></i>
                 <h4 class="counter">211</h4>
                 <span>Resturants</span>
               </div>
             </li>
             <li>
               <div class="block">
-                <i class="ion-university"></i>
+                <i class="fa fa-university"></i>
                 <h4 class="counter">26</h4>
                 <span>Museums</span>
               </div>
             </li>
             <li>
               <div class="block">
-                <i class="ion-plane"></i>
+                <i class="fa fa-plane"></i>
                 <h4><span class="counter">14</span> Minutes</h4>
                 <span>Drive from the Airport</span>
               </div>
@@ -102,24 +104,21 @@ permalink: /
         <div class="testimonial-carousel">
           <div id="testimonial-slider" class="owl-carousel">
             <div>
-              <img src="img/cotation.png" alt="IMG">
-                <p>Shoutout to the {{site.data.business.name}} employee spending his lunch streaming #comeyHearings . This stuff matters.</p>
+                <p><i class="fa fa-quote-left" aria-hidden="true"></i> Shoutout to the {{site.data.business.name}} employee spending his lunch streaming #comeyHearings . This stuff matters. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
                 <div class="user">
                   <img src="img/twitter-user-1.jpg" alt="Pepole">
                   <p><span>Bob Henson</span> CEO-Themefisher</p>
                 </div>
             </div>
             <div>
-              <img src="img/cotation.png" alt="IMG">
-                <p>At the 2017 SOFIC Convention in Tampa #Soflic #sofep @ {{site.data.business.name}} https://www.instagram.com/p/BUH0vvegRIW/ </p>
+                <p><i class="fa fa-quote-left" aria-hidden="true"></i> At the 2017 SOFIC Convention in Tampa #Soflic #sofep @ {{site.data.business.name}} https://www.instagram.com/p/BUH0vvegRIW/ <i class="fa fa-quote-right" aria-hidden="true"></i> </p>
                 <div class="user">
                   <img src="img/twitter-user-2.jpg" alt="Pepole">
                   <p><span>Clay Risro</span> CEO-Themefisher</p>
                 </div>
             </div>
             <div>
-              <img src="img/cotation.png" alt="IMG">
-                <p>Attending the #2017NLCTB Leadership Conference today! (@ {{site.data.business.name}} - @tampaconvcenter in Tampa, FL)</p>
+                <p><i class="fa fa-quote-left" aria-hidden="true"></i> Attending the #2017NLCTB Leadership Conference today! (@ {{site.data.business.name}} - @tampaconvcenter in Tampa, FL) <i class="fa fa-quote-right" aria-hidden="true"></i> </p>
                 <div class="user">
                   <img src="img/twitter-user-3.jpg" alt="Pepole">
                   <p><span>Rose Ray</span> CEO-Themefisher</p>
@@ -147,7 +146,7 @@ permalink: /
       {% for item in site.data.services %}
         <div class="col-sm-6 col-md-3">
           <div class="service-item">
-            <i class="icon {{item.icon}}"></i>
+            <i class="fa {{item.icon}}"></i>
             <h4>{{item.title}}</h4>
             <p>{{item.body}}</p>
           </div>

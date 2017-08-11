@@ -27,3 +27,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/jekyll,windows
+
+### NPM ###
+node_modules/
+npm-debug.log

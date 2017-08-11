@@ -1,8 +1,11 @@
 
 exclude:
   - "/vendor/"
+  - "/node_modules/"
+  - "/assets/_src_img/"
   - "Gemfile"
   - "Gemfile.lock"
+  - "gulpfile.js"
   - "README.md"
   - "LICENSE.md"
   - "*.gemspec"
@@ -27,7 +30,7 @@ markdown: kramdown
 
 # Sass
 sass:
-    sass_dir: _sass
+    sass_dir: assets/_sass
     style: compressed
 
 # Google analytics
