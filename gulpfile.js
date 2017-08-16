@@ -2,6 +2,8 @@
 // npm install gulp-cli -g
 // npm install gulp -D
 // npm install
+//
+// run "gulp images" to process images from assets/_src_img to /img folder to be used on the site
 var gulp = require('gulp');
 var imageop = require('gulp-image-optimization');
 
