@@ -3,6 +3,11 @@
 ---
 
 // Imports
+// bootstrap
+@import "vendor/bootstrap-sprockets";
+@import "vendor/bootstrap";
+
+// this projects files
 @import "base";
 @import "typography";
 @import "home";

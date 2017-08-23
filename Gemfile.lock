@@ -14,7 +14,7 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.3-x64-mingw32)
+    eventmachine (1.2.5-x64-mingw32)
     execjs (2.7.0)
     ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
@@ -22,7 +22,7 @@ GEM
       em-websocket (~> 0.5)
       jekyll (~> 3.1)
     http_parser.rb (0.6.0)
-    jekyll (3.5.1)
+    jekyll (3.5.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -73,4 +73,4 @@ DEPENDENCIES
   starter-theme-jekyll!
 
 BUNDLED WITH
-   1.15.2
+   1.15.4
