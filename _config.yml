@@ -28,10 +28,10 @@ logo: "/assets/logo.png"
 # Build settings
 markdown: kramdown
 
-# Sass
-sass:
-    sass_dir: assets/_sass
-    style: compressed
+# Sass is off loaded to gulp.js 
+# sass:
+#     sass_dir: assets/_scss
+#     style: compressed
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"

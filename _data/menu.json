@@ -5,23 +5,23 @@
     },
     {
       "text": "Directory",
-      "path": "/directory"
+      "path": "/directory/"
     },
     {
       "text": "Gallery",
-      "path": "/gallery"
+      "path": "/gallery/"
     },
     {
       "text": "News",
-      "path": "/news"
+      "path": "/news/"
     },
     {
       "text": "Contact",
-      "path": "/contact"
+      "path": "/contact/"
     },
     {
       "text": "Documents",
-      "path": "/docs"
+      "path": "/docs/"
     }
   ],
   "left": [{
@@ -30,7 +30,7 @@
     },
     {
       "text": "Directory",
-      "path": "/directory"
+      "path": "/directory/"
     }
   ]
 }

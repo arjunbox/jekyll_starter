@@ -22,7 +22,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 {% for item in site.data.menu.top %}
+                  {% if page.permalink == item.path %}
+                    <li class="active"><a href="{{ site.baseurl }}{{item.path}}" class="active">{{item.text}}</a></li>
+                  {% else %}
                   <li><a href="{{ site.baseurl }}{{item.path}}">{{item.text}}</a></li>
+                  {% endif %}
                 {% endfor %}
               </ul>
             </div><!-- /.navbar-collapse -->

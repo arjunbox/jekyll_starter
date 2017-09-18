@@ -1,11 +1,12 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
-
 // Imports
 // bootstrap
 @import "vendor/bootstrap-sprockets";
+@import "vendor/bootstrap-variables-overrides"; // import custom vars before used by bootstrap
 @import "vendor/bootstrap";
+
+@import "variables";
+@import "mixins";
+
 
 // this projects files
 @import "base";
