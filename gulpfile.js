@@ -14,6 +14,9 @@ var concat      = require('gulp-concat');
 var cleanCSS    = require('gulp-clean-css');
 var rename      = require("gulp-rename");
 var uglify      = require('gulp-uglify');
+var postcss     = require('gulp-postcss');
+var mqpacker    = require('css-mqpacker');
+
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -56,7 +59,8 @@ gulp.task('sass', function () {
             includePaths: ['scss'],
             onError: browserSync.notify
         }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(postcss([mqpacker]))
+        .pipe(prefix(['last 15 versions', '> 5%', 'ie 10', 'ie 11'], { cascade: true }))
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(gulp.dest('assets/css'))
         .pipe(cleanCSS({
