@@ -15,3 +15,22 @@ collections:
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Contact Page"
+        name: "contact"
+        file: "contact.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - label: "Home Page"
+        name: "home"
+        file: "index.html"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Visitors Text", name: "visitorstext", widget: "markdown"}
