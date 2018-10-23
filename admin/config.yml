@@ -24,8 +24,9 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
+          - {label: "Intro Subtitle", name: intro-subtitle, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          # - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+          - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - label: "Services"
         name: "services"
         file: "_data/services.yml"
