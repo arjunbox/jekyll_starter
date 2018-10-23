@@ -16,21 +16,24 @@ collections:
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "Pages"
-    name: "pages"
+    name: "home"
     files:
-      - label: "Contact Page"
-        name: "contact"
-        file: "contact.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - label: "Home Page"
         name: "home"
-        file: "index.html"
+        file: "_data/home.yml"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Visitors Text", name: "visitorstext", widget: "markdown"}
+          # - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - label: "Services"
+        name: "services"
+        file: "_data/services.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: body, widget: string}
+          - {label: Icon, name: icon, widget: string}
+          # - {label: Intro, name: intro, widget: markdown}
+          # - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+          # - {label: "Subtitle", name: "subtitle", widget: "string"}
+          # - {label: "Visitors Text", name: "visitorstext", widget: "markdown"}
