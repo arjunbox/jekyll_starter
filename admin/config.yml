@@ -28,6 +28,19 @@ collections:
           - {label: Intro Subtitle, name: intro-subtitle, widget: string}
           - {label: Intro Body, name: intro-body, widget: markdown}
           - {label: Intro Image, name: intro-img, widget: image}
+          - {label: Feature Title, name: feature-title, widget: string}
+          - {label: Feature Subtitle, name: feature-subtitle, widget: string}
+          - {label: Feature Body, name: feature-body, widget: markdown}
+          - {label: Feature Image, name: feature-img, widget: image}
+          - {label: Testimonial Title, name: testimonial-title, widget: string}
+          - {label: Testimonial Subtitle, name: testimonial-subtitle, widget: string}
+          - {label: Hotels, name: hotels, widget: number}
+          - {label: Resturants, name: resturants, widget: number}
+          - {label: Museums, name: museums, widget: number}
+          - {label: Minutes, name: minutes, widget: number}
+          - {label: Services Title, name: services-title, widget: string}
+          - {label: Services Subtitle, name: services-subtitle, widget: string}
+
       - label: "Contact"
         name: "contact"
         file: "_data/contact.yml"
