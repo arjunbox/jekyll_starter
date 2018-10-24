@@ -28,9 +28,9 @@ collections:
           - {label: Intro Subtitle, name: intro-subtitle, widget: string}
           - {label: Intro Body, name: intro-body, widget: markdown}
           - {label: Intro Image, name: intro-img, widget: image}
-      - label: "Services"
-        name: "services"
-        file: "_data/services.yml"
+      - label: "Contact"
+        name: "contact"
+        file: "_data/contact.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: string}
