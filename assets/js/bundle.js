@@ -101,12 +101,5 @@ $(document).ready(function() {
       itemsDesktopSmall: [979, 5],
     });
   }
-  // Counter
-  if ($('.counter').length) {
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1500
-    });
-  }
 
 });
